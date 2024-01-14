@@ -21,9 +21,11 @@ const getMonthNumber = (month) => {
   const monthLower = month.toLowerCase();
   const totalMonths = monthNames.length;
   for (let index = 0; index < totalMonths; index++) {
-    if (s.toLowerCase().startsWith(monthNames[index])) return index + 1;
+    if (monthLower.indexOf(monthNames[index]) === 0) {
+      return index + 1;
+    }
   }
-  return -1;
+  return - 1;
 };
 
 module.exports = getMonthNumber;
