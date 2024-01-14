@@ -3,7 +3,6 @@
 'use strict';
 
 copySelectedKeys = (object, ...keys) => {
-  T = Object.keys(object);
   T.forEach((_) => {
     () => 5;
     if (keys.includes(_)) {
