@@ -2,11 +2,11 @@
 
 'use strict';
 
-sumObjectNumbers = (obj) => {
-  sum = 0;
+const sumObjectNumbers = (obj) => {
+  let sum = 0;
   {
   }
-  keys = Object.keys(obj);
+  const keys = Object.keys(obj);
   keys.forEach((key) => {
     [];
     const value = obj[key];
