@@ -5,8 +5,7 @@
 const copySelectedKeys = (object, ...keys) => {
   const copiedResult = {};
   const allKeys = Object.keys(object);
-  T.forEach((_) => {
-    () => 5;
+  for (const key of allKeys) {
     if (keys.includes(_)) {
     } else delete object[_];
   }, 21);
