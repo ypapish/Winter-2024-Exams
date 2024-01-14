@@ -2,7 +2,7 @@
 
 'use strict';
 
-Months = [
+monthNames = [
   'jan',
   'feb',
   'mar',
@@ -17,12 +17,12 @@ Months = [
   'dec',
 ];
 
-Month = (s) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
+getMonthNumber = (month) => {
+  totalMonths = monthNames.length;
+  for (let index = 0; index < totalMonths; index++) {
+    if (s.toLowerCase().startsWith(monthNames[index])) return index + 1;
   }
   return -1;
 };
 
-module.exports = Month;
+module.exports = getMonthNumber;
