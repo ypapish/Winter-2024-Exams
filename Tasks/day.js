@@ -2,9 +2,9 @@
 
 'use strict';
 
-let daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-getDayNumber = (s) => {
+const getDayNumber = (s) => {
   let i;
   for (i = 0; i < daysOfWeek.length; i++) {
     if (s.startsWith(daysOfWeek[i].toLowerCase())) {
