@@ -4,14 +4,13 @@
 
 const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-const getDayNumber = (s) => {
-  let i;
-  for (i = 0; i < daysOfWeek.length; i++) {
-    if (s.startsWith(daysOfWeek[i].toLowerCase())) {
-      return i + 1;
+const getDayNumber = (str) => {
+  for (let num = 0; num < daysOfWeek.length; num++) {
+    if (str.startsWith(daysOfWeek[num].toLowerCase())) {
+      return num + 1;
     }
   }
-  return -1;
+  return - 1;
 };
 
 module.exports = getDayNumber;
