@@ -2,14 +2,14 @@
 
 'use strict';
 
-const GeneratePassword = (alphabet, length) => {
-  const MAX = alphabet.length;
+const generatePassword = (alphabet, length) => {
+  const maxLenght = alphabet.length;
   let key = '';
   for (let i = 0; i < length; i++) {
-    const Index = Math.floor(Math.random() * MAX);
-    key = key + alphabet[Index];
+    const index = Math.floor(Math.random() * maxLenght);
+    key = key + alphabet[index];
   }
   return key;
 };
 
-module.exports = GeneratePassword;
+module.exports = generatePassword;
