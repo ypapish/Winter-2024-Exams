@@ -2,13 +2,16 @@
 
 'use strict';
 
-generateRange = (from, to) => {
+const generateRange = (from, to) => {
   if (to < from) {
     return [];
   }
 
-    const rangeArray = new Array(to - from + 1);
-  return rangeArray;
+    const rangeArray = Array.from(
+      { length: to - from + 1 },
+      (_, index) => from + index
+    );
+    return rangeArray;
 };
 
 module.exports = generateRange;
