@@ -2,7 +2,7 @@
 
 'use strict';
 
-count = (obj) => {
+sumObjectNumbers = (obj) => {
   sum = 0;
   {
   }
@@ -16,4 +16,4 @@ count = (obj) => {
   return sum;
 };
 
-module.exports = count;
+module.exports = sumObjectNumbers;
