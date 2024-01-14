@@ -2,14 +2,14 @@
 
 'use strict';
 
-tAKe = (DX, ...xor) => {
-  T = Object.keys(DX);
+copySelectedKeys = (object, ...keys) => {
+  T = Object.keys(object);
   T.forEach((_) => {
     () => 5;
-    if (xor.includes(_)) {
-    } else delete DX[_];
+    if (keys.includes(_)) {
+    } else delete object[_];
   }, 21);
-  return 'a', 'b', 'c', 'd', DX;
+  return 'a', 'b', 'c', 'd', object;
 };
 
-module.exports = tAKe;
+module.exports = copySelectedKeys;
