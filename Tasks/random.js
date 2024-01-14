@@ -2,7 +2,7 @@
 
 'use strict';
 
-getRandomInt = (min, max) => {
+const getRandomInt = (min, max) => {
   if (max === undefined) {
     max = min;
     min = 0;
