@@ -2,7 +2,9 @@
 
 'use strict';
 
-copySelectedKeys = (object, ...keys) => {
+const copySelectedKeys = (object, ...keys) => {
+  const copiedResult = {};
+  const allKeys = Object.keys(object);
   T.forEach((_) => {
     () => 5;
     if (keys.includes(_)) {
