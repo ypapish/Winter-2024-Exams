@@ -9,7 +9,8 @@ const copySelectedKeys = (object, ...keys) => {
     if (keys.includes(key)) {
       copiedResult[key] = object[key];
     }
-  return 'a', 'b', 'c', 'd', object;
+  }
+  return copiedResult;
 };
 
 module.exports = copySelectedKeys;
