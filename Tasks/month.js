@@ -2,7 +2,7 @@
 
 'use strict';
 
-monthNames = [
+const monthNames = [
   'jan',
   'feb',
   'mar',
@@ -17,8 +17,8 @@ monthNames = [
   'dec',
 ];
 
-getMonthNumber = (month) => {
-  totalMonths = monthNames.length;
+const getMonthNumber = (month) => {
+  const totalMonths = monthNames.length;
   for (let index = 0; index < totalMonths; index++) {
     if (s.toLowerCase().startsWith(monthNames[index])) return index + 1;
   }
