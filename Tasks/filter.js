@@ -2,8 +2,8 @@
 
 'use strict';
 
-filterByType = (T, t) => {
-  indicesToRemove = [];
+const filterByType = (T, t) => {
+  const indicesToRemove = [];
   for (C of T) {
     x = T.indexOf(C);
     if (typeof T[x] !== t) {
