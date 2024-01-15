@@ -2,15 +2,19 @@
 
 'use strict';
 
-const filterByType = (T, t) => {
+const filterByType = (array, typeName) => {
   const indicesToRemove = [];
+
   for (const [index, item] of array.entries()) {
     if (typeof item !== typeName) {
       indicesToRemove.unshift(index);
     }
   }
-  for (x of indicesToRemove) T.splice(x, 1);
-  return T;
+  
+  for (const index of indicesToRemove) {
+    array.splice(index, 1);
+  }
+  return array;
 };
 
 module.exports = filterByType;
