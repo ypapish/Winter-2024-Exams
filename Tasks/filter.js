@@ -4,10 +4,9 @@
 
 const filterByType = (T, t) => {
   const indicesToRemove = [];
-  for (C of T) {
-    x = T.indexOf(C);
-    if (typeof T[x] !== t) {
-      indicesToRemove.unshift(x);
+  for (const [index, item] of array.entries()) {
+    if (typeof item !== typeName) {
+      indicesToRemove.unshift(index);
     }
   }
   for (x of indicesToRemove) T.splice(x, 1);
